@@ -6,7 +6,7 @@ import 'dart:collection';
 // String location = "NO 1 Teslim Balogun Street";
 // int num1 = 19;
 // double num2 = 5.5;
-void main(){
+//void main(){
   // print(first_name + last_name);
   // print(num1 + num2);
   // print("The name of my school is $school_name and it is located at $location");
@@ -154,9 +154,12 @@ void main(){
   //   print(num);
   // }
 
-  List<String> names = ["Uche", "John", "Peter", "Paul"];
-  print(names.where((name) => name.startsWith("P")));
-}
+  // List<String> names = ["Uche", "John", "Peter", "Paul"];
+  // print(names.where((name) => name.startsWith("P")));
+
+  // Map<String, String> countries = {"Niger": "Bida", "Lagos": "Ogudu", "Osun": "Ikirun", "Kaduna": "Zaria"};
+  // print(countries["Lagos"]);
+//}
 
 // class Person{
 //   String name;
@@ -202,3 +205,21 @@ void main(){
 // List<String> names = ['Rej', 'Jah', 'Rocky'];
 
 
+class Animal{
+  String name;
+  int numofLegs;
+  String lifeSpan;
+
+  Animal(this.name, this.numofLegs, this.lifeSpan);
+
+  void displayInfo(){
+    print("Animal name : $name");
+    print("Number of Legs: $numofLegs");
+    print("Life Span: $lifeSpan");
+  }
+}
+
+void main(){
+  Animal animal = new Animal("Dog", 4, "2 years");
+  animal.displayInfo();
+}
